@@ -1,7 +1,6 @@
 body{
     background-color: #09090B;
     background-image: url("src/bg.png");
-    background-repeat: no-repeat;
     background-size: cover;
 }
 header{
@@ -23,10 +22,10 @@ header{
     transition: .25s;
     font-size: .875rem;
     line-height: 1.25rem;
+    cursor: pointer;
 }
 .nav_item:hover{
-    background-color: #27272A;
-    backdrop-filter: blur(5px);
+    background-color: #131316;
 }
 .nav_items{
     display: flex;
@@ -39,6 +38,13 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: .25s;
+    padding: 18px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nav_icon:hover{
+    background-color: #131316;
 }
 .nav_icons{
     display: flex;
@@ -79,9 +85,10 @@ nav{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 32.5px;
     font-style: normal;
+    max-width: 40rem;
 }
 .btns{
     margin-top: 23.5px;
@@ -99,6 +106,11 @@ nav{
     border: none;
     border-radius: 8px;
     background-color: #2DB27F;
+    transition: .25s;
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: #1D7453;
 }
 .btn2{
     color: #FFFFFF;
@@ -114,9 +126,10 @@ nav{
     display: flex;
     gap: 11px;
     transition: .25s;
+    cursor: pointer;
 }
 .btn2:hover{
-    background-color: rgba(113, 113, 122, 0.1);
+    background-color: #131316;
 }
 .subtext{
     margin-top: 16px;
@@ -128,8 +141,8 @@ nav{
     line-height: 20px;
 }
 .content{
-    margin-left: 344px;
-    margin-top: 200px;
+    margin-left: 18vw;
+    margin-top: calc(50vh - 301px);
 }
 footer{
     height: 110px;
@@ -156,3 +169,4 @@ footer{
 .main{
     width: 1112px;
 }
+
