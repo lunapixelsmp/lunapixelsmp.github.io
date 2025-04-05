@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="./src/logo.png" alt="Luna Pixel" class="header_logo">
+        <img src="src/logo.png" alt="Luna Pixel" class="header_logo">
         <nav>
             <div class="nav_items">
                 <h4 class="nav_item nav_active">Главная</h4>
@@ -19,28 +19,28 @@
             </div>
             <div class="nav_icons">
                 <div class="nav_icon">
-                    <img src="./src/tg.svg" alt="">
+                    <img src="src/tg.svg" alt="">
                 </div>
                 <div class="nav_icon">
-                    <img src="./src/ds.svg" alt="">
+                    <img src="src/ds.svg" alt="">
                 </div>
                 <div class="nav_icon">
-                    <img src="./src/supprt.svg" alt="">
+                    <img src="src/supprt.svg" alt="">
                 </div>
             </div>
         </nav>
     </header>
     <div class="content">
         <div class="title">
-            <img src="./src/logo2.svg" alt="">
+            <img src="src/logo2.svg" alt="">
             <p>Luna Pixel</p>
         </div>
-        <p class="text">Полу-RP Vanilla+ без ограничений в постройках.<br>
-            Вы можете масштабировать и воплощать свои фантазии настолько,<br>
+        <p class="text">Полу-RP Vanilla+ без ограничений в постройках.
+            Вы можете масштабировать и воплощать свои фантазии настолько,
             насколько её хватит, мы постараемся вам это предоставить!</p>
         <div class="btns">
-            <button class="btn1">Заполнить анкету</button>
-            <button class="btn2"><img src="src/copy.svg" alt="">Скопировать IP</button>
+            <a href="https://discord.gg/xcxhV27Myy" class="btn1">Заполнить анкету</a>
+            <button class="btn2" onclick="myFunction()"><img src="src/copy.svg" alt="">Скопировать IP</button>
         </div>
         <p class="subtext">Для игры не нужна лицензия. Версия сервера — 1.21.1</p>
     </div>
@@ -59,3 +59,8 @@
     </footer>
 </body>
 </html>
+<script>
+function myFunction() {
+    navigator.clipboard.writeText("lunapixel.ru");
+}
+</script>
