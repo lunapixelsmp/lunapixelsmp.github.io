@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body{
     background-color: #09090B;
     background-image: url("src/bg.png");
@@ -6,9 +13,15 @@ body{
 header{
     height: 75px;
     width: 100vw;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .nav_item{
     font-family: "Inter", sans-serif;
@@ -19,6 +32,8 @@ header{
     color: #F4F4F5;
     padding: 8px 16px;
     border-radius: 20px;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
     transition: .25s;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -28,6 +43,8 @@ header{
     background-color: #131316;
 }
 .nav_items{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8px;
 }
@@ -35,9 +52,17 @@ header{
     width: 36px;
     height: 20px;
     color: #F4F4F5;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
     transition: .25s;
     padding: 18px 0px;
     border-radius: 20px;
@@ -47,12 +72,18 @@ header{
     background-color: #131316;
 }
 .nav_icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8px;
 }
 nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 8px;
 }
 .nav_active{
@@ -76,6 +107,8 @@ nav{
     letter-spacing: -3.6px;
 }
 .title{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8px;
 }
@@ -93,6 +126,8 @@ nav{
 .btns{
     margin-top: 23.5px;
     gap: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .btn1{
@@ -106,6 +141,8 @@ nav{
     border: none;
     border-radius: 8px;
     background-color: #2DB27F;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
     transition: .25s;
     text-decoration: none;
 }
@@ -123,8 +160,12 @@ nav{
     border: none;
     border-radius: 8px;
     background-color: rgba(113, 113, 122, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 11px;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
     transition: .25s;
     cursor: pointer;
 }
@@ -140,10 +181,6 @@ nav{
     font-size: 14px;
     line-height: 20px;
 }
-.content{
-    margin-left: 18vw;
-    margin-top: calc(50vh - 301px);
-}
 footer{
     height: 110px;
     background-color: #0C0C0E;
@@ -151,9 +188,15 @@ footer{
     bottom:0%;
     width:100%; 
     border-top: solid 1px rgba(39, 39, 42, 0.75);
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .first{
     color: #fff;
@@ -162,6 +205,8 @@ footer{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
     height: 20px;
@@ -169,4 +214,17 @@ footer{
 .main{
     width: 1112px;
 }
-
+.wrapper{
+    width: 64.5vw;
+    margin: 0 auto;
+    height: calc(100vh - 110px - 75px);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.content{
+    height: 60%;
+}
